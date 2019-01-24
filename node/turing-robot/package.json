@@ -1,0 +1,15 @@
+{
+  "name": "lyf-robot",
+  "version": "1.0.0",
+  "description": "This is a turing robot, Use run in command line",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "robot": "./bin/chat.js"
+  },
+  "author": "lyf103104",
+  "license": "ISC"
+}
