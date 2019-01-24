@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<title>shooting</title>
+		<link rel="stylesheet" href="./shooting.css">
+	</head>
+	<body>
+		<div class="shoot-container">
+			<div class="ready-countdown">
+				<img src="./images/countdown-1.png">
+				<img src="./images/countdown-2.png">
+				<img src="./images/countdown-3.png">
+			</div>
+			<div class="basket-wrap">
+				<img src="./images/qiujia.png">
+				<div class="basket item"></div>
+			</div>
+			<div class="projection item"></div>
+			<div id="shooting" class="basketball-big item"></div>
+			<div class="level">
+				<img class="bc" src="./images/level-1.png">
+				<div class="scope">
+					<!-- <div class="abc"></div> -->
+					<div id="slider" class="basketball-small item"></div>
+				</div>
+			</div>
+			<div class="start-btn">
+				<img src="./images/gamestart-2.png">
+				<img src="./images/gamestart-1.png">
+			</div>
+			<ul class="score-wrap">
+				<li class="timer">
+					<div class="icon"></div>
+					<div class="num"><span id="countdown">30</span><small>s</small></div>
+				</li>
+				<li class="count">
+					<div class="icon"></div>
+					<div class="num">+<span></span></div>
+				</li>
+			</ul>
+			<img class="music" src="./images/music.png">
+		</div>
+
+		<!-- <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script> -->
+		<!-- <script src="https://cdn.bootcss.com/jquery-easing/1.4.0/jquery.easing.min.js"></script> -->
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/jquery.easing.js"></script>
+		<script src="../../util/index.js"></script>
+		<script src="./js/shooting.js"></script>
+		<script>
+			window.onload = function () {
+				if ($(window).width() > 768) {$('.shoot-container').css({'width': 768,'height': $(window).height()})}
+
+				$('.start-btn').eq(0).one('touchend', function() {
+
+					/**
+					 * @param              [description]
+					 * @return {[type]}    [description]
+					 * @eg: Shoot.start()
+					 * @eg: Shoot.end()
+					 * @eg: Shoot.setGameLevel()
+					 */
+					Shoot.start();
+					Music.player();
+					console.log("'game start!'");
+				});
+
+				console.log(Shoot);
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,174 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Arial",sans-serif;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+.shoot-container{
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-image: url(./images/bc.jpg);
+	background-size: 100% 100%;
+}
+.shoot-container .item{
+	position: absolute;
+	background-size: cover;
+}
+.shoot-container .basket{
+	width: 70px;
+	height: 73px;
+	top: 32%;
+	left: 50%;
+	margin-left: -35px;
+	background-image: url(./images/basket-1.png);
+}
+.shoot-container .basketball-big,
+.shoot-container .scope .basketball-small{
+	background-image: url(./images/basketball.png);
+}
+.shoot-container .basketball-big{
+	width: 14.4vh;
+	height: 14.4vh;
+	top: 63%;
+	left: 50%;
+	margin-left: -7.2vh;
+}
+.shoot-container .projection{
+	width: 90px;
+    height: 15px;
+    top: 76vh;
+    left: 50%;
+    margin-left: -45px;
+    background-image: url(./images/projection.png);
+    background-size: 100% 100%;
+}
+.shoot-container .progress,
+.shoot-container .scope{
+	width: 186px;
+	height: 8px;
+	right: 0;
+	bottom: 20px;
+}
+.shoot-container .scope{
+	position: absolute;
+}
+.shoot-container .scope .basketball-small{
+	width: 8px;
+    height: 8px;
+    left: 0;
+    bottom: 0;
+}
+.shoot-container .score-wrap{
+	width: 19vw;
+    position: absolute;
+    right: 0;
+    top: 10vh;
+}
+.shoot-container .score-wrap li{
+	width: 100%;
+	height: 22px;
+	line-height: 22px;
+	margin: 8px 0;
+}
+.shoot-container .score-wrap .icon,
+.shoot-container .score-wrap .num{
+	float: left;
+}
+.shoot-container .score-wrap .icon{
+	width: 22px;
+	height: 100%;
+	margin-right: 3px;
+	background-size: 22px 22px;
+	background-repeat: no-repeat;
+}
+.shoot-container .score-wrap .timer .icon{
+    background-image: url(./images/timer.png);
+}
+.shoot-container .score-wrap .count .icon{
+	background-image: url(./images/basketball.png);
+}
+.shoot-container .score-wrap .num{
+	color: #fff;
+	font-size: 16px;
+}
+.shoot-container .score-wrap .count{
+	margin-top: 15px;
+}
+.shoot-container .start-btn{
+	width: 90px;
+    height: 32px;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    margin-left: -45px;
+}
+.shoot-container .start-btn img{
+	width: 100%;
+	height: 100%;
+}
+.shoot-container .ready-countdown{
+	width: 90px;
+	height: 160px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -80px;
+	margin-left: -45px;
+	z-index: 10;
+}
+.shoot-container .score-wrap .count,
+.shoot-container .ready-countdown img,
+.shoot-container .start-btn img:last-child{
+	display: none;
+}
+.shoot-container .level{
+    position: absolute;
+    bottom: 11%;
+    left: 50%;
+
+    margin-left: -120px;
+}
+
+.shoot-container .level,
+.shoot-container .level .bc{
+	width: 240px;
+    height: auto;
+    display: block;
+}
+
+.shoot-container .basket-wrap{
+	position: absolute;
+	left: 50%;
+	top: 9%;
+	margin: 0 auto;
+	margin-left: -19vh;
+}
+.shoot-container .basket-wrap,
+.shoot-container .basket-wrap img{
+	width: 38vh;
+	height: auto;
+	display: block;
+}
+
+.shoot-container .music
+{
+    position: fixed;
+    top: 15px;
+    right: 15px;
+
+    width: 26px;
+    height: 26px;
+}
+
+
+
+
